@@ -14,19 +14,19 @@ public class DemoApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext context =SpringApplication.run(DemoApplication.class, args);
-
-		UserRepository ur = context.getBean(UserRepository.class);
-		User user=new User();
-		user.setName("Pushpak");
-		user.setCity("amt");
-
-		User user1=new User();
-		user1.setName("sunny");
-		user1.setCity("bmt");
-
-		User user2=new User();
-		user2.setName("bunny");
-		user2.setCity("cmt");
+//
+//		UserRepository ur = context.getBean(UserRepository.class);
+//		User user=new User();
+//		user.setName("Pushpak");
+//		user.setCity("amt");
+//
+//		User user1=new User();
+//		user1.setName("sunny");
+//		user1.setCity("bmt");
+//
+//		User user2=new User();
+//		user2.setName("bunny");
+//		user2.setCity("cmt");
 
 		//Saving Single User
 //		User userr =  ur.save(user);
@@ -45,14 +45,14 @@ public class DemoApplication {
 //		System.out.println(user3);
 
    //Reading Multiple Users
-		Iterable<User> allusers = ur.findAll();
-		allusers.forEach(y-> System.out.println(y));
+//		Iterable<User> allusers = ur.findAll();
+//		allusers.forEach(y-> System.out.println(y));
 
 		System.out.println("--------------------------------------------------");
 
-		for(User uu:allusers) {
-			System.out.println(uu);
-		}
+//		for(User uu:allusers) {
+//			System.out.println(uu);
+//		}
 	}
 
 }
