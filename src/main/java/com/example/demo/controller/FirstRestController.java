@@ -34,4 +34,11 @@ public class FirstRestController {
         List<User> list = us.getUser();
         return list;
     }
+
+    @GetMapping(value = "/homeuser/{id}")
+    public User getUser(@PathVariable ("id")int id)
+    {
+        User usr = us.getOneUser(id);
+        return usr;
+    }
 }
